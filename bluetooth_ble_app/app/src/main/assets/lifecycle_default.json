@@ -1,0 +1,515 @@
+
+{
+    "Current Selection" : 1,
+    "Pocketlinks" : [
+                     {
+                     "Friendly Name" : "New PocketLink",
+                     "Trackee Baud Rate" : 1,
+                     "Tracker Bluetooth Encoding Key" : 1,
+                     "Trackee Frequency" : 434695000,
+                     "Trackee Privacy Decoding Key" : 1,
+                     "Transmitters" : [
+                                       {
+                                       "Data Frequency" : 434695000,
+                                       "Callsign Interval Seconds" : 2,
+                                       "Data Baud Rate" : 1,
+                                       "Beeping Frequency" : 434005000,
+                                       "Trackee Privacy Encoding Key" : 1,
+                                       "Friendly Name" : "RT-GPS",
+                                       "Time Slice Offset" : 3,
+                                       "Feature Bitmap" : 1,
+                                       "Callsign" : "",
+                
+                                       "Phase 1" : {
+                                       "Phase Duration Seconds" : 3600,
+                                       "uBlox Mode" : 0,
+                                       "GPS Refresh Interval Milliseconds" : 1000,
+                                       "Strong Weak Transmission Ratio" : 2,
+                                       "Strong Power dB" : 127,
+                                       "Week Power dB" : 21,
+                                       "Coordinate Transmission Schedule" : 0,
+                                       "Coordinate Transmission Interval Milliseconds" : 1000,
+                                       "Beeping Period Milliseconds" : 1000,
+                                       "Beeping Duration Milliseconds" : 60,
+                                       "Beeping Power dB" : 21,
+                                       "LED Enabled" : true
+                                       },
+                                       
+                                       "Phase 2" : {
+                                       "Phase Duration Seconds" : 10800,
+                                       "uBlox Mode" : 1,
+                                       "GPS Refresh Interval Milliseconds" : 5000,
+                                       "Strong Weak Transmission Ratio" : 5,
+                                       "Strong Power dB" : 127,
+                                       "Week Power dB" : 21,
+                                       "Coordinate Transmission Schedule" : 0,
+                                       "Coordinate Transmission Interval Milliseconds" : 5000,
+                                       "Beeping Period Milliseconds" : 1000,
+                                       "Beeping Duration Milliseconds" : 40,
+                                       "Beeping Power dB" : 21,
+                                       "LED Enabled" : true
+                                       },
+                                       
+                                       "Phase 3" : {
+                                       "Phase Duration Seconds" : 248400,
+                                       "uBlox Mode" : 2,
+                                       "GPS Refresh Interval Milliseconds" : 900000,
+                                       "Strong Weak Transmission Ratio" : 4,
+                                       "Strong Power dB" : 127,
+                                       "Week Power dB" : 21,
+                                       "Coordinate Transmission Schedule" : 0,
+                                       "Coordinate Transmission Interval Milliseconds" : 30000,
+                                       "Beeping Period Milliseconds" : 2000,
+                                       "Beeping Duration Milliseconds" : 20,
+                                       "Beeping Power dB" : 21,
+                                       "LED Enabled" : true
+                                       },
+                                       
+                                       "Phase 4" : {
+                                       "Phase Duration Seconds" : 4000000000,
+                                       "uBlox Mode" : 3,
+                                       "GPS Refresh Interval Milliseconds" : 0,
+                                       "Strong Weak Transmission Ratio" : 5,
+                                       "Strong Power dB" : 40,
+                                       "Week Power dB" : 21,
+                                       "Coordinate Transmission Schedule" : 0,
+                                       "Coordinate Transmission Interval Milliseconds" : 0,
+                                       "Beeping Period Milliseconds" : 2000,
+                                       "Beeping Duration Milliseconds" : 20,
+                                       "Beeping Power dB" : 10,
+                                       "LED Enabled" : true
+                                       }
+
+                                       }
+                                       ]
+                     
+                     }
+                     ],
+    "Selections" : [{
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 9000,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 1000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 1000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 35,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 1800,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 35,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 86400,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 4,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 10,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 3600,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 1000,
+                    "Strong Weak Transmission Ratio" : 2,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 1000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 60,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 10800,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 40,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 248400,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 4,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 10,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 0,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 2,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 30,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 25200,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 30,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 280800,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 4,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 10,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 3600,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 1000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 1000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 60,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 7200,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 40,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 691200,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 10,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 3600,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 66,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 127,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 66,
+                    "Beeping Period Milliseconds" : 0,
+                    "Beeping Duration Milliseconds" : 35,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 10800,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 127,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 60,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 172800,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 127,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 21,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                   "Phase 1" : {
+                    "Phase Duration Seconds" : 3600,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 1000,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 1000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 60,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 14400,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 60,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 162000,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 4,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 5,
+                    "Strong Power dB" : 40,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 10,
+                    "LED Enabled" : true
+                    }
+                    },
+                    {
+                    "Phase 1" : {
+                    "Phase Duration Seconds" : 3600,
+                    "uBlox Mode" : 0,
+                    "GPS Refresh Interval Milliseconds" : 66,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 127,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 66,
+                    "Beeping Period Milliseconds" : 1200,
+                    "Beeping Duration Milliseconds" : 35,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 2" : {
+                    "Phase Duration Seconds" : 10800,
+                    "uBlox Mode" : 1,
+                    "GPS Refresh Interval Milliseconds" : 5000,
+                    "Strong Weak Transmission Ratio" : 4,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 5000,
+                    "Beeping Period Milliseconds" : 1000,
+                    "Beeping Duration Milliseconds" : 40,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 3" : {
+                    "Phase Duration Seconds" : 115200,
+                    "uBlox Mode" : 2,
+                    "GPS Refresh Interval Milliseconds" : 900000,
+                    "Strong Weak Transmission Ratio" : 2,
+                    "Strong Power dB" : 127,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 30000,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 127,
+                    "LED Enabled" : true
+                    },
+                    
+                    "Phase 4" : {
+                    "Phase Duration Seconds" : 4000000000,
+                    "uBlox Mode" : 3,
+                    "GPS Refresh Interval Milliseconds" : 0,
+                    "Strong Weak Transmission Ratio" : 1,
+                    "Strong Power dB" : 21,
+                    "Week Power dB" : 21,
+                    "Coordinate Transmission Schedule" : 0,
+                    "Coordinate Transmission Interval Milliseconds" : 0,
+                    "Beeping Period Milliseconds" : 2000,
+                    "Beeping Duration Milliseconds" : 20,
+                    "Beeping Power dB" : 21,
+                    "LED Enabled" : true
+                    }
+                    }]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/popup"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/popup_background"
+                android:orientation="vertical">
+
+    <!--<com.baoyz.swipemenulistview.SwipeMenuListView-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--/>-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:divider="@null"/>
+
+    <TextView
+        android:id="@+id/nopocketlinks_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="No Bluetooth link found"
+        android:textStyle="italic"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -27,6 +27,8 @@ import android.view.View;
 import java.util.ArrayList;
 
 
+import systems.kestrel.bluetooth_le.Utils.AppCommon;
+import systems.kestrel.bluetooth_le.services.Bluetooth.Ble.BlePeripheral;
 import systems.kestrel.bluetooth_le.services.BluetoothLinkFacade;
 import systems.kestrel.bluetooth_le.views.BluetoothPopup;
 
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
 
     private BluetoothPopup mBluetoothPopup;
 
+    public ArrayList<BlePeripheral> mPeripheralList = new ArrayList<BlePeripheral>();
+
 
 
     private BluetoothLinkStatus mLastBluetoothLinkStatus;
@@ -69,10 +73,23 @@ public class MainActivity extends AppCompatActivity {
     private BroadcastReceiver bluetoothCallback = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            mDeviceList = bluetoothLinkFacade.deviceList;
-            if (mBluetoothPopup != null) {
-                mBluetoothPopup.refreshList();
+
+            if (AppCommon.isTestMode()) {
+                mPeripheralList = bluetoothLinkFacade.mBlePeripheralArray;
+                if (mBluetoothPopup != null) {
+                    mBluetoothPopup.refreshList();
+                }
             }
+            else {
+                // Comment by Dev for testing
+                /*
+                mDeviceList = bluetoothLinkFacade.deviceList;
+                if (mBluetoothPopup != null) {
+                    mBluetoothPopup.refreshList();
+                }
+                */
+            }
+
         }
     };
 

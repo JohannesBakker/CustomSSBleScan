@@ -106,6 +106,7 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
      *  \brief  Notification posted when Bluetooth state changes
      */
     public static final String kBLEManagerStateChanged = "blemanager state changed";
+    public static final String kBLEManagerPeripheralDataWrited = "blemanager data writed";
 
     protected BluetoothAdapter mBluetoothAdapter;
     protected Context mContext;
@@ -496,6 +497,18 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
         data.descriptor = descriptor;
         data.success = status;
         EventBus.getDefault().post(new SEvent(kBLEManagerPeripheralDescriptorWrite, data));
+    }
+
+    @Override
+    public void gattCharacteristicWrite(BlePeripheral peripheral, BluetoothGattCharacteristic characteristic, int status) {
+        CharacteristicData data = new CharacteristicData();
+        data.peripheral = peripheral;
+        data.characteristic = characteristic;
+        data.value = new byte[1];
+
+        data.value[0] = (byte)status;
+
+        EventBus.getDefault().post(new SEvent(kBLEManagerPeripheralDataWrited, data));
     }
 
     public static String getLongUuidFromShortUuid(String shortUuid) {

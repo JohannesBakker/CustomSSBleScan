@@ -134,6 +134,14 @@ public class BlePeripheral {
             if (delegate != null)
                 delegate.gattDescriptorWrite(BlePeripheral.this, descriptor, status == BluetoothGatt.GATT_SUCCESS);
         }
+
+        @Override
+        public void onCharacteristicWrite(BluetoothGatt gatt,
+                                          BluetoothGattCharacteristic characteristic,
+                                          int status) {
+            if (delegate != null)
+                delegate.gattCharacteristicWrite(BlePeripheral.this, characteristic, status);
+        }
     };
 
     private BlePeripheral() {
@@ -391,5 +399,9 @@ public class BlePeripheral {
             return "";
         String code = name.substring(11);
         return code;
+    }
+
+    public BluetoothGatt getBluetoothGatt() {
+        return mBluetoothGatt;
     }
 }

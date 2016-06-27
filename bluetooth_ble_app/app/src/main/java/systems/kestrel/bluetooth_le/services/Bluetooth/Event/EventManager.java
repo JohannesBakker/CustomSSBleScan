@@ -4,6 +4,8 @@ import android.content.Context;
 
 import org.greenrobot.eventbus.EventBus;
 
+import systems.kestrel.bluetooth_le.BluetoothLE;
+
 /**
  * Created by Dev
  */
@@ -19,7 +21,7 @@ public class EventManager {
 
     public static EventManager sharedInstance() {
         if (_instance == null) {
-            _instance = new EventManager(SBLEApplication.sharedInstance().getApplicationContext());
+            _instance = new EventManager(BluetoothLE.sharedInstance().getApplicationContext());
         }
         return _instance;
     }

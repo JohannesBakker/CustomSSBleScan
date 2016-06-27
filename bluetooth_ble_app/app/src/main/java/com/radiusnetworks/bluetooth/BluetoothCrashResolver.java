@@ -37,7 +37,7 @@ import java.util.Set;
  *
  * Version 1.0
  *
- * Created by dyoung on 3/24/14.
+ * Created by Dev
  */
 @TargetApi(5)
 public class BluetoothCrashResolver {

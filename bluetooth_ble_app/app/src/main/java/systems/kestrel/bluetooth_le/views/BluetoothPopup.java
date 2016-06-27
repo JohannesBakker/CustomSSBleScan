@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
 
+import systems.kestrel.bluetooth_le.Utils.AppCommon;
+import systems.kestrel.bluetooth_le.services.Bluetooth.Ble.BlePeripheral;
 import systems.kestrel.bluetooth_le.services.BluetoothLinkFacade;
 import systems.kestrel.bluetooth_le.R;
 import systems.kestrel.bluetooth_le.adapters.BluetoothlinklistAdapter;
@@ -46,11 +48,23 @@ public class BluetoothPopup extends PopupWindow {
         mListAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (AppCommon.isTestMode()) {
+
+                    Log.i(TAG, "Connecting to device");
+                    if(mBluetoothLinkFacade != null && mBluetoothLinkFacade.mBlePeripheralArray.size() > 0) {
+                        BlePeripheral currentDevice = mBluetoothLinkFacade.mBlePeripheralArray.get(position);
+                        mBluetoothLinkFacade.connectToDevice(currentDevice);
+                    }
+                }
+
+                // Comment by Dev for testing
+                /*
                 Log.i(TAG, "Connecting to device");
                 if(mBluetoothLinkFacade != null && mBluetoothLinkFacade.deviceList.size() > 0) {
                     BluetoothDevice currentDevice = mBluetoothLinkFacade.deviceList.get(position);
                     mBluetoothLinkFacade.connectToDevice(currentDevice);
                 }
+                */
             }
         });
 

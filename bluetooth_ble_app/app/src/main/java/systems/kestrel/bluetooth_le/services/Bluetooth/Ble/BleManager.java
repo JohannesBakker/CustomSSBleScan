@@ -117,6 +117,8 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
     protected Runnable stopRunnable;
     protected Handler enableHandler;
 
+    private ArrayList<String> mFilterDeviceNames = new ArrayList<String>();
+
     public static class CharacteristicData {
         public BlePeripheral peripheral;
         public BluetoothGattCharacteristic characteristic;
@@ -389,20 +391,29 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
                         , device.getName(), device.getAddress());
                 return false;
             }
-            /*
-            if (device.getName().contains("Power Band")) {
-                Logger.log(TAG, "checking device : Power Band was discovered successful (name=\"%s\", address=\"%s\"",
+
+            if (!mFilterDeviceNames.isEmpty()) {
+                String currDevName = device.getName().toLowerCase();
+
+                for (int i = mFilterDeviceNames.size() - 1; i >= 0; i-- ) {
+                    String mFilterName = mFilterDeviceNames.get(i).toLowerCase();
+
+                    if (currDevName.contains(mFilterName)) {
+                        Logger.log(TAG, "checking device : %s was discovered successful (name=\"%s\", address=\"%s\"",
+                                mFilterDeviceNames.get(i), device.getName(), device.getAddress());
+                        return true;
+                    }
+                }
+
+                Logger.log(TAG, "checking device : discovered Bluetooth devices (name=\"%s\", address=\"%s\"",
+                        device.getName(), device.getAddress());
+                return false;
+            }
+            else {
+                Logger.log(TAG, "checking device : Bluetooth device was discovered successful (name=\"%s\", address=\"%s\"",
                         device.getName(), device.getAddress());
                 return true;
             }
-            Logger.log(TAG, "checking device : discovered Power Band (name=\"%s\", address=\"%s\"",
-                    device.getName(), device.getAddress());
-            return false;
-            */
-
-            Logger.log(TAG, "check device : discovered Bluetooth devices (address = \"%s\"", device.getAddress());
-            return true;
-
         }
         else {
             ArrayList<UUID> uuids = parseUuids(scanRecord);
@@ -414,7 +425,7 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
                 }
             }
             if (isPeripheral) {
-                Logger.log(TAG, "checking device : discovered PowerBand by Service (name=\"%s\", address=\"%s\"",
+                Logger.log(TAG, "checking device : discovered device by Service (name=\"%s\", address=\"%s\"",
                         device.getName(), device.getAddress());
             } else {
                 Logger.log(TAG, "checking device : An unsupported device found by Service (name=\"%s\", address=\"%s\"",
@@ -564,5 +575,14 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
     @Override
     public void scanStopped() {
         stopScan();
+    }
+
+
+    public void clearFilterDeviceNames() {
+        mFilterDeviceNames.clear();
+    }
+
+    public void addFilterDeviceName(String deviceName) {
+        mFilterDeviceNames.add(deviceName);
     }
 }

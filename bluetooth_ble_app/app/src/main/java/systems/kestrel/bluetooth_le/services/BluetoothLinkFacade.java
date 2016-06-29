@@ -205,7 +205,9 @@ public class BluetoothLinkFacade extends Service {
 
             mIsFinding = true;
 
+            //mBleManager.addFilterDeviceName("Power");
             mBleManager.scanForPeripheralsWithServices(null, true);
+
             //mBleManager.scanForPeripheralsWithServices(arrFilters, true);
 
             Handler handler = new Handler() {

@@ -2,7 +2,7 @@ package systems.kestrel.bluetooth_le.services.Bluetooth.Event;
 
 import android.content.Context;
 
-import org.greenrobot.eventbus.EventBus;
+import de.greenrobot.event.EventBus;
 
 import systems.kestrel.bluetooth_le.BluetoothLE;
 

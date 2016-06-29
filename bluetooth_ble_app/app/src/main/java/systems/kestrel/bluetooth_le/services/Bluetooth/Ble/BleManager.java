@@ -12,9 +12,6 @@ import android.util.Log;
 
 import com.radiusnetworks.bluetooth.BluetoothCrashResolver;
 
-
-import org.greenrobot.eventbus.EventBus;
-
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
@@ -24,6 +21,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+import de.greenrobot.event.EventBus;
 import systems.kestrel.bluetooth_le.BluetoothLE;
 import systems.kestrel.bluetooth_le.Utils.Logger;
 import systems.kestrel.bluetooth_le.services.Bluetooth.Event.SEvent;

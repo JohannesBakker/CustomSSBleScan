@@ -5,8 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.greenrobot.eventbus.EventBus;
-
+import de.greenrobot.event.EventBus;
 import systems.kestrel.bluetooth_le.services.Bluetooth.Event.SEvent;
 
 /**

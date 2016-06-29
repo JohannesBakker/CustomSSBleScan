@@ -13,13 +13,9 @@ import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
-import android.bluetooth.BluetoothProfile;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
-import android.bluetooth.le.ScanFilter;
-import android.bluetooth.le.ScanResult;
 import android.bluetooth.le.ScanSettings;
-import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Binder;
@@ -27,19 +23,15 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
-import android.os.ParcelUuid;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
-import java.lang.reflect.Array;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 import java.util.UUID;
 
 import systems.kestrel.bluetooth_le.Utils.AppCommon;
-import systems.kestrel.bluetooth_le.Utils.Logger;
 import systems.kestrel.bluetooth_le.services.Bluetooth.Ble.BleManager;
 import systems.kestrel.bluetooth_le.services.Bluetooth.Ble.BlePeripheral;
 import systems.kestrel.bluetooth_le.services.Bluetooth.Event.SEvent;
@@ -90,7 +82,7 @@ public class BluetoothLinkFacade extends Service {
     private static boolean mIsFinding = false;
     private static int mSearchTimeoutValue = 15 * 1000;
     private onBandActionListener mBandActionListener = null;
-    public ArrayList<BlePeripheral> mBlePeripheralArray = null;
+    public ArrayList<BlePeripheral> mBlePeripheralArray = new ArrayList<BlePeripheral>();
     public BlePeripheral mConnectedPeripheral = null;
 
 
@@ -617,9 +609,22 @@ public class BluetoothLinkFacade extends Service {
                 @Override
                 public void completed(Object object) {
 
+                    /*
                     mBlePeripheralArray = (ArrayList<BlePeripheral>)object;
+
                     if (mBlePeripheralArray == null || mBlePeripheralArray.isEmpty())
                         return;
+                    */
+                    ArrayList<BlePeripheral> tmpArray = (ArrayList<BlePeripheral>)object;
+                    if (tmpArray == null || tmpArray.isEmpty())
+                        return;
+
+                    mBlePeripheralArray.clear();
+
+                    for (int i = 0; i < tmpArray.size(); i++) {
+                        BlePeripheral tmpOne = tmpArray.get(i);
+                        mBlePeripheralArray.add(tmpOne);
+                    }
 
                     mConnectedPeripheral = mBlePeripheralArray.get(0);
 

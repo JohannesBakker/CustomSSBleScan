@@ -204,7 +204,9 @@ public class BluetoothLinkFacade extends Service {
             arrFilters.add(serviceID);
 
             mIsFinding = true;
-            mBleManager.scanForPeripheralsWithServices(arrFilters, true);
+
+            mBleManager.scanForPeripheralsWithServices(null, true);
+            //mBleManager.scanForPeripheralsWithServices(arrFilters, true);
 
             Handler handler = new Handler() {
                 @Override

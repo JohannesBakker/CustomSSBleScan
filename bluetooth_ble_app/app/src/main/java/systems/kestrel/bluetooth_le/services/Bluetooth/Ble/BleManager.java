@@ -389,6 +389,7 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
                         , device.getName(), device.getAddress());
                 return false;
             }
+            /*
             if (device.getName().contains("Power Band")) {
                 Logger.log(TAG, "checking device : Power Band was discovered successful (name=\"%s\", address=\"%s\"",
                         device.getName(), device.getAddress());
@@ -397,6 +398,10 @@ public class BleManager implements BleScannerListener, BlePeripheralDelegate, Bl
             Logger.log(TAG, "checking device : discovered Power Band (name=\"%s\", address=\"%s\"",
                     device.getName(), device.getAddress());
             return false;
+            */
+
+            Logger.log(TAG, "check device : discovered Bluetooth devices (address = \"%s\"", device.getAddress());
+            return true;
 
         }
         else {
